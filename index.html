@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Mi Página Web</h1>
+  </header>
+
+  <main>
+    <p>Haz clic en el botón para mostrar un mensaje:</p>
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Mi Sitio</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").innerText = "¡Hola! Gracias por visitar mi página 😄";
+    }
+  </script>
+
+</body>
+</html>
